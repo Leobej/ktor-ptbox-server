@@ -29,6 +29,13 @@ dependencies {
     testImplementation(libs.kotlin.test.junit)
     implementation(libs.ktor.client.content.negotiation)
     implementation(libs.ktor.serialization.kotlinx.json)
+    implementation(libs.ktor.server.cors)
+    implementation(libs.ktor.server.websocket)
+    implementation("org.jetbrains.exposed:exposed-core:0.40.1")
+    implementation("org.jetbrains.exposed:exposed-dao:0.40.1")
+    implementation("org.jetbrains.exposed:exposed-jdbc:0.40.1")
+    implementation("org.xerial:sqlite-jdbc:3.41.2.1")
+
 
     implementation("io.ktor:ktor-server-content-negotiation")
 }
