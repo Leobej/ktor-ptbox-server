@@ -1,4 +1,3 @@
-
 plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.ktor)
@@ -35,7 +34,8 @@ dependencies {
     implementation("org.jetbrains.exposed:exposed-dao:0.40.1")
     implementation("org.jetbrains.exposed:exposed-jdbc:0.40.1")
     implementation("org.xerial:sqlite-jdbc:3.41.2.1")
-
+    implementation("com.github.docker-java:docker-java-core:3.3.0")
+    implementation("com.github.docker-java:docker-java-transport-httpclient5:3.3.0")
 
     implementation("io.ktor:ktor-server-content-negotiation")
 }
